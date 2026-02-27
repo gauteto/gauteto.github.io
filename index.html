@@ -3,20 +3,39 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gaute Torsvik</title>
-    <style>
-      body { margin: 0; font-family: Georgia, "Times New Roman", serif; background: #f7f5ef; color: #1f2937; }
-      main { max-width: 720px; margin: 10vh auto; padding: 0 1.2rem; }
-      h1 { margin-bottom: 0.2rem; }
-      p { margin-top: 0; }
-      a { color: #0f766e; }
-    </style>
+    <title>Gaute Torsvik | Economist</title>
+    <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
-    <main>
-      <h1>Gaute To Torsvik</h1>
-      <p>Personal homepage.</p>
-      <p><a href="mailto:you@example.com">Contact</a></p>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="site-title">Gaute Torsvik</h1>
+        <nav>
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="pages/working-papers.html">Working Papers</a>
+          <a href="pages/publications.html">Publications</a>
+          <a href="pages/cv.html">CV</a>
+          <a href="pages/contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h2>Academic Economist</h2>
+        <p>
+          This website hosts working papers, publications, curriculum vitae,
+          and contact details for Gaute Torsvik.
+        </p>
+        <p>
+          Use the navigation above to access research outputs.
+        </p>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="container" id="site-footer"></div>
+    </footer>
+    <script src="assets/js/site.js"></script>
   </body>
 </html>
