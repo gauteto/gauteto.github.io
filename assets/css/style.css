@@ -167,6 +167,73 @@ a {
   padding: 1.2rem 0 1.8rem;
 }
 
+body.home {
+  background: #f7f5ef;
+}
+
+body.home .site-header {
+  background: transparent;
+}
+
+body.home .site-header .container {
+  align-items: center;
+}
+
+body.home nav a {
+  margin-left: 0.4rem;
+}
+
+body.home nav a:not(:last-child)::after {
+  content: " /";
+  color: var(--muted);
+  margin-left: 0.4rem;
+}
+
+body.home .home-main {
+  padding-top: 1.6rem;
+}
+
+.home-intro {
+  display: grid;
+  grid-template-columns: 1fr 140px;
+  gap: 1.2rem;
+  align-items: start;
+}
+
+.home-intro p {
+  font-size: 1.06rem;
+  margin: 0 0 1rem;
+}
+
+.profile-photo-round {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+}
+
+.meta-links a {
+  margin-left: 0.2rem;
+}
+
+.meta-links span {
+  margin: 0 0.3rem;
+  color: var(--muted);
+}
+
+.update-card {
+  margin-top: 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  padding: 1rem 1.2rem;
+}
+
+body.home .update-card h3 {
+  margin-bottom: 0.8rem;
+}
+
 @media (max-width: 700px) {
   .hero-grid {
     grid-template-columns: 1fr;
@@ -174,5 +241,9 @@ a {
 
   .profile-photo {
     max-width: 140px;
+  }
+
+  .home-intro {
+    grid-template-columns: 1fr;
   }
 }
