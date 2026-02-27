@@ -60,6 +60,15 @@ function buildPaperCard(paper) {
     code.rel = 'noopener';
     links.appendChild(code);
   }
+  if (paper.scholar_link) {
+    const scholar = document.createElement('a');
+    scholar.className = 'button';
+    scholar.href = paper.scholar_link;
+    scholar.textContent = 'Scholar';
+    scholar.target = '_blank';
+    scholar.rel = 'noopener';
+    links.appendChild(scholar);
+  }
   if (links.childNodes.length > 0) {
     article.appendChild(links);
   }
