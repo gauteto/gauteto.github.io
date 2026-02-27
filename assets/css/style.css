@@ -69,14 +69,14 @@ main {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 170px 1fr;
+  grid-template-columns: 120px 1fr;
   gap: 1.2rem;
   align-items: start;
 }
 
 .profile-photo {
   width: 100%;
-  max-width: 170px;
+  max-width: 120px;
   border: 1px solid var(--line);
 }
 
@@ -173,6 +173,6 @@ a {
   }
 
   .profile-photo {
-    max-width: 190px;
+    max-width: 140px;
   }
 }
