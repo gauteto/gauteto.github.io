@@ -6,6 +6,21 @@ async function loadPapers(dataPath) {
   return data.sort((a, b) => (b.year || 0) - (a.year || 0));
 }
 
+function resolveInternalPath(path) {
+  if (!path) return '';
+  if (/^(https?:)?\/\//.test(path) || path.startsWith('/') || path.startsWith('../') || path.startsWith('./')) {
+    return path;
+  }
+
+  const pathname = window.location.pathname;
+  const pagesIndex = pathname.indexOf('/pages/');
+  if (pagesIndex >= 0) {
+    const siteRoot = pathname.slice(0, pagesIndex + 1);
+    return `${siteRoot}${path}`;
+  }
+  return path;
+}
+
 function buildPaperCard(paper) {
   const article = document.createElement('article');
   article.className = 'paper';
@@ -36,7 +51,7 @@ function buildPaperCard(paper) {
   if (paper.pdf) {
     const pdf = document.createElement('a');
     pdf.className = 'button';
-    pdf.href = paper.pdf;
+    pdf.href = resolveInternalPath(paper.pdf);
     pdf.textContent = 'PDF';
     pdf.target = '_blank';
     pdf.rel = 'noopener';
