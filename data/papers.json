@@ -280,14 +280,14 @@
     "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jjpfWPgAAAAJ&citation_for_view=jjpfWPgAAAAJ:j3f4tGmQtD8C"
   },
   {
-    "id": "working-2026-lottery-tax",
+    "id": "working-2026-substitution-and-income-effects-of-labor-income-taxation",
     "type": "working",
-    "title": "Lottery Tax",
-    "authors": "Gaute Torsvik",
+    "title": "Substitution and income effects of labor income taxation",
+    "authors": "Michael Graber, Morten Håvarstein, Magne Mogstad, Gaute Torsvik, Ola L. Vestad",
     "year": 2026,
     "status": "Working Paper",
     "journal": "",
-    "abstract": "Metadata placeholder. Update title/authors/abstract as needed.",
+    "abstract": "The elasticity of taxable income (ETI) parameter is a key quantity in tax policy and labor supply analysis. Using Norwegian tax reform evidence, the paper studies when common ETI estimands have a causal interpretation and what they imply for compensated and uncompensated labor supply elasticities across the income distribution. Estimated responsiveness rises with income, implying substantial heterogeneity and potential efficiency gains from lower top-income tax rates.",
     "pdf": "assets/papers/lottery-tax-12.pdf",
     "doi": "",
     "code_link": "",
